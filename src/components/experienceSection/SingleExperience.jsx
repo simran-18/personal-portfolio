@@ -46,7 +46,7 @@ const SingleExperience = ({ experience }) => {
         {/* View More button */}
         {isOverflowing && (
           <button
-            className="absolute bottom-2 right-2 bg-orange text-white text-xs px-3 py-1 rounded shadow"
+            className="absolute bottom-2 right-2  bg-orange text-white text-xs px-3 py-1 rounded shadow"
             onClick={() => setShowModal(true)}
           >
             View More
@@ -60,20 +60,20 @@ const SingleExperience = ({ experience }) => {
       animate="visible"
       exit="exit"
       variants={modalVariants}
-      className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+      className="fixed inset-0 bg-black bg-opacity-50  z-50 flex items-center justify-center p-4"
     >
       <motion.div
         initial="hidden"
         animate="visible"
         exit="exit"
         variants={modalVariants}
-        className="bg-white p-6 rounded-xl max-w-2xl w-full overflow-y-auto max-h-[80vh] shadow-xl relative"
+        className="bg-darkBrown border-2 border-cyan p-6 rounded-xl max-w-2xl w-full overflow-y-auto max-h-[80vh] shadow-xl relative"
       >
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl font-bold text-cyan">{experience.job}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-cyan">{experience.job}</h2>
           <button
             onClick={() => setShowModal(false)}
-            className="text-black text-xl font-bold hover:text-red-500 focus:outline-none"
+            className="text-white text-xl font-bold hover:text-red-500 focus:outline-none"
             aria-label="Close"
           >
             ✕
@@ -81,7 +81,7 @@ const SingleExperience = ({ experience }) => {
         </div>
         <p className="text-orange">{experience.company}</p>
         <p className="text-lightGrey mb-4">{experience.date}</p>
-        <ul className="list-disc pl-4 space-y-2 text-black">
+        <ul className="list-disc pl-4 space-y-2 text-white">
           {experience.responsibilities.map((resp, index) => (
             <li key={index}>{resp}</li>
           ))}

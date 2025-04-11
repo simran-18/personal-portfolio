@@ -5,33 +5,40 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const projects = [
   {
-    name: "Vacation of Africa",
-    year: "Mar2022",
-    align: "right",
-    image: "../../public/images/website-img-1.jpg",
-    link: "#",
-  },
-  {
-    name: "Moola App",
-    year: "Sept2022",
+    name: "Blackngreen Website",
+    year: "Mar 2025",
     align: "left",
-    image: "../../public/images/website-img-2.webp",
-    link: "#",
+    image: "/images/website-img-2.webp",
+    link: "https://revamp.blackngreen.com",
   },
   {
-    name: "Tourzania",
-    year: "Jan2023",
+    name: "Nexiva Landing Page",
+    year: "Nov 2024",
     align: "right",
-    image: "../../public/images/website-img-3.jpg",
-    link: "#",
+    image: "/images/website-img-3.jpg",
+    link: "https://nexiva.ai",
   },
   {
-    name: "Bank of Luck",
-    year: "May2024",
+    name: "Education Portal",
+    year: "June 2024",
     align: "left",
-    image: "../../public/images/website-img-4.jpg",
-    link: "#",
+    image: "/images/website-img-4.jpg",
+    link: "https://dev.educarportal.com/",
   },
+  {
+    name: "Swipe&Win",
+    year: "Mar 2023",
+    align: "right",
+    image: "/images/website-img-1.jpg",
+    link: "https://livedemo-sp.swipe4win.com/",
+  },
+  {
+    name: "Comfy Store",
+    year: "Sept 2022",
+    align: "left",
+    image: "/images/website-img-1.jpg",
+    link:"https://react-course-comfy-sloth-store.netlify.app/products/recroK1VD8qVdMP5H",
+  }
 ];
 
 const ProjectsMain = () => {
@@ -54,6 +61,7 @@ const ProjectsMain = () => {
               year={project.year}
               align={project.align}
               image={project.image}
+              link={project.link}
             />
           );
         })}

@@ -4,8 +4,8 @@ import { IoLogoJavascript } from "react-icons/io";
 import { SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
-import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { IoLogoGithub } from "react-icons/io";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
@@ -34,9 +34,9 @@ const skills = [
     skill: "Redux",
     icon: SiRedux,
   },
-  {
-    skill: "NextJS",
-    icon: SiNextdotjs,
+ {
+    skill: "Github",
+    icon: IoLogoGithub,
   },
   {
     skill: "TailwindCSS",
